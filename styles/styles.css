@@ -1,1 +1,176 @@
+/**
+*
+*==========================================================================
+*  styles.css --IS135_Team_Project
+*========================================================================== 
+*
+*Created November
+ 19, 2014
+*
+*
+*Authored by Charlie Borklund, Kevin Carroll, Gregg Pizzi
+*
+*/
 
+
+/* ----- Basic styling -----*/
+
+body {
+  background-color: #dcdcdc;
+}
+
+#page-wrapper{
+  background-color: #f7f2da;
+  width: 768px;
+  mgreen: auto;
+}
+
+#content{
+  background-color: #f7f2da;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-bottom: 10px;
+}
+
+img {
+  margin: 10px 50px;
+}
+
+#user-links {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: red;
+}
+
+nav{
+color: black;
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+ background-color: red;
+   color: white;
+   width: 960px;
+  margin: auto;
+  font: serif;
+  position: relative;
+  }
+
+#header #user-links{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+#user-links a {
+  color: black;
+}
+
+
+#user-links a:hover {
+  text-decoration: underline;
+}
+
+#header p{
+  color: white;
+  font-family: serif;
+  font-size: 2em;
+  }
+
+#header #names {
+  color: black;
+  font-family: sans-serif;
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 0 0 .7em white;
+}
+
+h1 {
+  text-align: center;
+  border-width: thick;
+  border-style: solid;
+  color: white;
+  background-color: red;
+  border-bottom-color: silver;
+  border-left-color: silver;
+  border-right-color: silver;
+  border-top-color: silver;
+  margin: 10px
+     }
+
+#plan {
+  text-align: left;
+  background-color: honeydew;
+  border: thick;
+  border-color: black;
+}
+
+.nav nav-tabs li{
+  background-color: black;
+}
+
+#dates {
+  background-color: honeydew;
+  border: thick;
+  border-color: black;
+}
+
+.dates {
+  text-align: center;
+}
+
+
+ul.prizes{
+text-align: left;
+  list-style-type: square;
+}
+
+ul.dates{
+text-align: left;
+  list-style-type: square;
+}
+
+ul.news{
+text-align: left;
+  list-style-type: square;
+}
+
+ul.cocalendar{
+text-align: left;
+  list-style-type: square;
+}
+
+footer {
+    }
+
+#footer{
+  background-color: #f7f2da;
+}
+
+footer p{
+  text-align: center;
+  border-width: thick;
+  border-style: solid;
+  color: white;
+  background-color: red;
+  border-bottom-color: silver;
+  border-left-color: silver;
+  border-right-color: silver;
+  border-top-color: silver;
+  margin: 10px;
+  font-size: 2em;
+ }
+ 
+ footer img {
+  float:left;
+  align: center;
+}
+
+
+#photos{
+  float: right;
+  
+}
