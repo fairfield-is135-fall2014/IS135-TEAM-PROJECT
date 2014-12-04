@@ -18,12 +18,17 @@
 
 body {
   background-color: #dcdcdc;
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
 }
 
 #page-wrapper{
+margin: auto;
   background-color: #f7f2da;
-  width: 768px;
-  mgreen: auto;
+  width: 100%;  
 }
 
 #content{
@@ -34,7 +39,8 @@ body {
 }
 
 img {
-  margin: 10px 50px;
+  margin: auto;
+  width: 100%;
 }
 
 #user-links {
@@ -53,9 +59,12 @@ color: black;
 
 #header {
  background-color: red;
-   color: white;
-   width: 100%;
-  margin: auto;
+  color: white;
+  width: 100%;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-top: auto;
   font: serif;
   position: relative;
   }
