@@ -3,15 +3,16 @@
   <head>
     <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
     
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
     
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     
     <link href="styles/styles.css" media="screen" rel="stylesheet" type="text/css" />
     
     <title>HTML5, CSS3 and JavaScript demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     
@@ -28,10 +29,14 @@
           
           <nav id="user-links"><a href="login">Login</a></nav>
           
+          <nav id="user-links-register"><a href="login">Register</a></nav>
+          
           <ul class="nav nav-tabs">
             
             <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">Events</a></li>
+            
+            <li role="presentation" id="static"><a href="#">Events</a></li>
+            
             <li role="presentation"><a href="#">Sign Up</a></li>
             
             <li role="presentation" class="dropdown">
@@ -39,7 +44,6 @@
                 Competitor's Guide<span class="caret"></span>
               </a>
               <ul class="dropdown-menu" role="menu">
-                
                 <li role="presentation"><a href="#">Getting Started</a></li>
                 <li role="presentation"><a href="#">Game Plan: Step-by-Step</a></li>
                 <li role="presentation"><a href="#">Resources: Templates, Links, etc</a></li>
@@ -60,13 +64,28 @@
                 
               </ul>
             </li>
-            <li role="presentation"><a href="#">Fairfield.edu</a></li>
+            <li role="presentation"><a href="#">Fairfield.edu</a>
+            </li>
             
-          </ul></div></header>
-          
-      <img src="images/fairfieldbpc.jpg" alt="past winners">
+          </ul></div>
+        
+      </header>
       
-      <div id="plan">
+      <div id="main"> 
+        
+        
+        <div id="winners">    
+          <img src="images/fairfieldbpc.jpg" alt="past winners" width="100%" height="100%">
+        </div>
+        <div id="group-img">
+          <img src="images/group.jpg" alt="group of participants" width="35%" height="35%">
+        </div>
+        <div id="solo-img">
+          <img src="images/solo-updated4.png" alt="participant speaking" width="35%" height="35%">
+        </div>
+      </div>
+      
+      <div id="text">
         <h1>The Fourth Annual Business Plan Competition</h1>
         
         <p>This year's funding is <b>over</b> $20,000 in cash and prizes:</p>
@@ -82,7 +101,7 @@
       </div>
       
       <div id="dates">
-        <h1>Competition Calendar</h1>
+        <h2>Competition Calendar</h2>
         
         <ul class="dates">
           <li>Sept 2: <a href="#">Annual Kickoff</a></li>
@@ -97,7 +116,7 @@
         </ul>
         
         <div id="newsitems">
-          <h1>In The News</h1>
+          <h2>In The News</h2>
           <ul class="news">
             <li><a href="#">Fairfield Mirror</a> - Elevator Pitch Contest (11/20/14)</li>
             <li><a href="#">Fairfield County Business Journal</a> Dolan competition rewards young enterprises (4/17/14)</li>
@@ -107,29 +126,95 @@
             
           </ul>
         </div>
-        
-        <div id="cocal">
-          <h1>Community Calendar</h1>
-          <ul class="cocalendar">
-            <li><a href="#">Career Fair for those wanting to work for a Startup - Nov. 14</a></li>
-            <li><a href="#">November 14-16</a> New Haven Stratup Weekend</li>
-            <li><a href="#">CONNECTICUT NEW VENTURE COMPETITION.</a> The 19th annual Connecticut Collegiate Business Planning/Modeling Competition</li>
-            <li><a href="#">Connecticut New Venture Competition</a></li>
-          </ul>
-        </div>
+      </div> 
+      <div id="cocal">
+        <h2>Community Calendar</h2>
+        <ul class="cocalendar">
+          <li><a href="#">Career Fair for those wanting to work for a Startup - Nov. 14</a></li>
+          <li><a href="#">November 14-16</a> New Haven Stratup Weekend</li>
+          <li><a href="#">CONNECTICUT NEW VENTURE COMPETITION.</a> The 19th annual Connecticut Collegiate Business Planning/Modeling Competition</li>
+          <li><a href="#">Connecticut New Venture Competition</a></li>
+        </ul>
       </div>
-     
-      <footer>
-        <div id="footer">
-          <p>Thank You to Our Sponsors</p>
-          <container id="photos">
-            <img src="images/CriticalMixLogo.png" alt="Critical Mix Logo">
-            <img src="images/blumshapiro_footer.png" alt="BlumShapiro Logo">
-            <img src="images/indie_and_thegrid.png" alt="Indie and The Grid Logo">
-            <img src="images/FAME_Logo_Short.png" alt="FAME Logo" width="75" height="75">
-          </container>
+      
+      
+      
+      <h2> Thank You to Our Sponsors</h2> 
+      
+      
+      <div id="footer-images">
+       
+        <div id="cml">
+          <img src="images/criticalmixlogo.png" alt="Critical Mix Logo">
+        </div>
+        <div id="bs">
+          <img src="images/blumshapiro_footer.png" alt="BlumShapiro Logo">
+        </div>
+        <div id="iag">
+          <img src="images/indie_and_thegrid.png" alt="Indie and The Grid Logo" height="50">
+        </div>
+        <div id="fame">
+          <img src="images/FAME_Logo_Short.png" alt="FAME Logo" width="90" height="50">
+        </div>  
+      </div>
+      
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="follow">
+        <p>Follow us on:<br>
+          <a href="https://www.linkedin.com/groups?gid=2130149" rel="nofollow" title="linkedin" class="social-icon">
+            <img src="images/linkedin.jpg" alt="linkedin" width="24" height="24">
+          </a>
           
-        </div></footer></div></body>
-  <!-- End your code here -->
-  
-</html>
+          <a href="https://www.facebook.com/FairfieldDSB" rel="nofollow" title="linkedin" class="social-icon">
+            <img src="images/facebook-b.png" alt="facebook" width="24" height="24">
+          </a>
+          <a href="https://twitter.com/FairfieldDSB" rel="nofollow" title="linkedin" class="social-icon">
+            <img src="images/twitter-filled.png" alt="twitter" width="24" height="24">
+          </a>
+          <a href="http://is-dsb.fairfield.edu/fbp/rss.xml" rel="nofollow" title="linkedin" class="social-icon">
+            <img src="images/rss.gif" alt="feeds" width="24" height="24">
+          </a>
+          
+          <br>
+          
+          Fairfield BPC Update<br>
+          Stay informed on our latest news!
+        </p> 
+        
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Join our email list</legend>
+            <ul>
+              <li><label for="firstlast">Email:</label>
+                <input type="text" name="username" id="firstlast"></li>
+            </ul>
+            <input type="submit" value="Submit">
+          </fieldset>
+        </form>        
+        
+        
+      </div> 
+      <br>
+      <br>
+      <br>
+      
+      <footer> 
+        <div id="footer">
+          <div id="footer-title">
+            <p>Fairfield University
+            </p>   </div>
+          <div id="footer-where">
+            <p>
+              1073 North Benson Road<br>
+              Fairfield, Connecticut 06824<br>
+              (203) 254-4000 <br>
+              webmaster@fairfield.edu</p>
+          </div>         
+        </div>
+      </footer></div></body></html>
+<!-- End your code here -->
