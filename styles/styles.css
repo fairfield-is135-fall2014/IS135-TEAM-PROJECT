@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**
 *
 *==========================================================================
@@ -5,9 +6,8 @@
 *========================================================================== 
 *
 *Created November
- 19, 2014
+19, 2014
 *
-
 *
 *Authored by Charlie Borklund, Kevin Carroll, Gregg Pizzi
 *
@@ -18,12 +18,18 @@
 
 body {
   background-color: #dcdcdc;
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
 }
 
 #page-wrapper{
+  margin: auto;
   background-color: #f7f2da;
-  width: 768px;
-  mgreen: auto;
+  width: 960px;
+  
 }
 
 #content{
@@ -33,9 +39,8 @@ body {
   margin-bottom: 10px;
 }
 
-img {
-  margin: 10px 50px;
-}
+
+
 
 #user-links {
   position: absolute;
@@ -45,20 +50,27 @@ img {
 }
 
 nav{
-color: black;
+  color: black;
   background-color: gray;
   margin: 0;
   padding: 0;
 }
 
+.nav nav-tabs a:hover{
+  color:green;
+}
+
 #header {
- background-color: red;
-   color: white;
-   width: 960px;
-  margin: auto;
+  background-color: red;
+  color: white;
+  width: 100%;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-top: auto;
   font: serif;
   position: relative;
-  }
+}
 
 #header #user-links{
   position: absolute;
@@ -75,11 +87,28 @@ color: black;
   text-decoration: underline;
 }
 
+
+#header #user-links-register{
+  position: absolute;
+  top: 10px;
+  right: 65px;
+}
+
+#user-links-register a {
+  color: black;
+}
+
+
+#user-links-register a:hover {
+  text-decoration: underline;
+}
+
+
 #header p{
   color: white;
   font-family: serif;
   font-size: 2em;
-  }
+}
 
 #header #names {
   color: black;
@@ -89,7 +118,22 @@ color: black;
   text-shadow: 0 0 .7em white;
 }
 
+#winners{
+  float: left;
+  width: 65%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#group-img{
+  
+}
+
+#solo-img{
+}
+
 h1 {
+  clear: left;
   text-align: center;
   border-width: thick;
   border-style: solid;
@@ -100,7 +144,22 @@ h1 {
   border-right-color: silver;
   border-top-color: silver;
   margin: 10px
-     }
+}
+
+h2 {
+  clear: left;
+  text-align: center;
+  border-width: thick;
+  border-style: solid;
+  color: white;
+  background-color: red;
+  border-bottom-color: silver;
+  border-left-color: silver;
+  border-right-color: silver;
+  border-top-color: silver;
+  margin: 10px
+}
+
 
 #plan {
   text-align: left;
@@ -109,8 +168,12 @@ h1 {
   border-color: black;
 }
 
-.nav nav-tabs li{
-  background-color: black;
+.menu{
+  color: green;
+}
+#static{
+color: red;
+ 
 }
 
 #dates {
@@ -125,53 +188,125 @@ h1 {
 
 
 ul.prizes{
-text-align: left;
+  text-align: left;
   list-style-type: square;
 }
 
 ul.dates{
-text-align: left;
+  text-align: left;
   list-style-type: square;
 }
 
 ul.news{
-text-align: left;
+  text-align: left;
   list-style-type: square;
 }
 
 ul.cocalendar{
-text-align: left;
+  text-align: left;
   list-style-type: square;
 }
 
-footer {
-    }
+
 
 #footer{
-  background-color: #f7f2da;
+  background-color: grey;
 }
 
-footer p{
-  text-align: center;
-  border-width: thick;
-  border-style: solid;
+#footer-title {
+  width:100%;
   color: white;
-  background-color: red;
-  border-bottom-color: silver;
-  border-left-color: silver;
-  border-right-color: silver;
-  border-top-color: silver;
-  margin: 10px;
+  font-family: serif;
   font-size: 2em;
- }
- 
- footer img {
-  float:left;
-  align: center;
+  border: 10px solid #2f2f2f;
+  text-align: center;
+}
+
+#footer-where{
+  width:100%;
+  text-align: center;
+  border-left: 5px solid #2f2f2f;
+  border-bottom: 5px solid #2f2f2f;
+  border-right: 5px solid #2f2f2f;
+  border-right-width: 250px;
+  border-left-width: 250px;
+  border-bottom-width: 25px;
+  min-width: 250px;
 }
 
 
-#photos{
-  float: right;
+#footer-images{
+  float: left;
+  width=100%;
   
 }
+
+#email{
+  width: 100%;
+}
+
+
+#cml{
+  margin: 25px 50px;
+  float: left;
+}
+
+#bs{
+  margin: 25px 50px;
+  float: left;
+}
+#iag{
+  margin: 25px 50px;
+  float: left;
+}
+#fame{
+  margin: 25px 50px;
+  float: left;
+}
+
+.row{
+  margin-left: 360px;
+  margin-right: 360px;
+}
+
+
+#footer-images{
+  width: 100%;
+  float: left;
+}
+
+.dropdown-toggle{
+  color: white;
+}
+
+#follow{
+  clear: left;
+  width: 100%;
+  height: 275px;
+  background-color: #f5deb3;
+  color: balck;
+  border-width: 100px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 150%;
+    }
+
+#follow ul li{
+  list-style-image: none;
+  list-style-type: none;
+}
+
+#emailer{
+  width: 100%;
+}
+
+#main, #text{
+  width: 100%;
+}
+
+@media all and (min-width:525px) {
+  #page-wrapper{
+    width: 100%;
+  }
+  
+  }
