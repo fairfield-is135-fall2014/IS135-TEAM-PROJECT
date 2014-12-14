@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /**
 *
 *==========================================================================
@@ -32,6 +31,16 @@ body {
   
 }
 
+.container-fluid{
+  width: 100%;
+}
+
+.icon-bar{
+  color: blue;
+  background-color: yellow;
+}
+
+
 #content{
   background-color: #f7f2da;
   padding-left: 1em;
@@ -39,44 +48,40 @@ body {
   margin-bottom: 10px;
 }
 
+#collapse navbar-collapse{
+  background-color: red;
+}
 
 
+#bs-example-navbar-collapse-1{
+  background-color: red;
+  border-color: red;
+}
 
+a{
+  color:white;
+}
 #user-links {
   position: absolute;
   top: 10px;
   right: 15px;
   color: red;
 }
-a{
-  color: white;
-}
-#nav{
+
+nav{
   color: black;
   background-color: gray;
   margin: 0;
   padding: 0;
- 
 }
 
-#nav nav-tabs a:hover{
-  color:green;
+.nav-tabs  nav li a {
+  color:white;
 }
-#ul.nav.nav-tabs{
-  width: 100%;
-}
-#row{
-  width: 100%;
-}
-.group-img{
-  width:160%
-}
-#solo-img{
-  width: 100%;
-}
-#col-xs-12 {
+
+#header {
   background-color: red;
-  color: black;
+  color: white;
   width: 100%;
   margin-left: auto;
   margin-bottom: auto;
@@ -86,12 +91,6 @@ body {
   position: relative;
 }
 
-#col-xl-6{
-  width: 100%;
-}
-#header{
-  background-color: red;
-}
 #header #user-links{
   position: absolute;
   top: 10px;
@@ -123,6 +122,22 @@ body {
   text-decoration: underline;
 }
 
+
+
+#user-links-search{
+  position: absolute;
+  top: 10px;
+  right: 135px;
+}
+
+#user-links-search a {
+  color: black;
+}
+
+
+#user-links-search a:hover {
+  text-decoration: underline;
+}
 
 #header p{
   color: white;
@@ -192,8 +207,8 @@ h2 {
   color: green;
 }
 #static{
-color: red;
- 
+  color: red;
+  
 }
 
 #dates {
@@ -309,7 +324,7 @@ ul.cocalendar{
   text-align: center;
   font-weight: bolder;
   font-size: 150%;
-    }
+}
 
 #follow ul li{
   list-style-image: none;
@@ -318,11 +333,6 @@ ul.cocalendar{
 
 #emailer{
   width: 100%;
-}
-.main{
-  width: 100%;
-  padding: 0;
-  margin: 0;
 }
 
 #main, #text{
@@ -334,4 +344,4 @@ ul.cocalendar{
     width: 100%;
   }
   
-  }
+}
