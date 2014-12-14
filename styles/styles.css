@@ -48,21 +48,35 @@ body {
   right: 15px;
   color: red;
 }
-
-nav{
+a{
+  color: white;
+}
+#nav{
   color: black;
   background-color: gray;
   margin: 0;
   padding: 0;
+ 
 }
 
-.nav nav-tabs a:hover{
+#nav nav-tabs a:hover{
   color:green;
 }
-
-#header {
+#ul.nav.nav-tabs{
+  width: 100%;
+}
+#row{
+  width: 100%;
+}
+.group-img{
+  width:160%
+}
+#solo-img{
+  width: 100%;
+}
+#col-xs-12 {
   background-color: red;
-  color: white;
+  color: black;
   width: 100%;
   margin-left: auto;
   margin-bottom: auto;
@@ -72,6 +86,12 @@ nav{
   position: relative;
 }
 
+#col-xl-6{
+  width: 100%;
+}
+#header{
+  background-color: red;
+}
 #header #user-links{
   position: absolute;
   top: 10px;
@@ -298,6 +318,11 @@ ul.cocalendar{
 
 #emailer{
   width: 100%;
+}
+.main{
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 #main, #text{
